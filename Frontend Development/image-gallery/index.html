@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+<div class="gallery">
+
+    <button onclick="prevImage()">❮</button>
+
+    <img id="gallery-image"
+         src="images/image1.jpg"
+         onclick="openLightbox()">
+
+    <button onclick="nextImage()">❯</button>
+
+</div>
+
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+
+    <img id="lightbox-image">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
