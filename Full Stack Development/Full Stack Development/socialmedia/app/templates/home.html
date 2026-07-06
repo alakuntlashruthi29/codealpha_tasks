@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Platform</title>
+</head>
+<body>
+
+<h1>Social Media Posts</h1>
+
+{% for post in posts %}
+
+<h2>{{ post.username }}</h2>
+
+<p>{{ post.content }}</p>
+
+<p>Likes: {{ post.likes }}</p>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>
